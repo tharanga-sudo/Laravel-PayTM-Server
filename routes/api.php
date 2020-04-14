@@ -15,10 +15,10 @@ use Illuminate\Http\Request;
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 Route::get('/appConfig', 'API\AppController@getAppConfig');
-
+Route::get('/products', 'API\ProductController@getProducts');
 Route::group(['middleware' => 'auth:api'], function(){
 	Route::post('/prepareOrder', 'API\OrderController@prepareOrder');
-	Route::get('/products', 'API\ProductController@getProducts');
+
 	Route::post('/orders', 'API\OrderController@createOrder');
 	Route::get('/orders/{id}', 'API\OrderController@getOrder');
 	Route::get('/transactions', 'API\TransactionController@getTransactions');
