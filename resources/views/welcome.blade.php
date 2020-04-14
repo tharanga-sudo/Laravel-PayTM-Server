@@ -77,8 +77,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="title m-b-md">Payment API 1.0v
                 </div>
 
                 <div class="links">
